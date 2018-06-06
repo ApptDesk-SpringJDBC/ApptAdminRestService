@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+.mainTable{
+	border-right:1px solid #d4d4d4;
+	border-top:1px solid #d4d4d4;
+	margin-bottom:20px;
+}
+.mainTable th,
+.totalRow td{
+	background:#e5e5e5;
+}
+.mainTable th.noBg{
+	background:none;
+	border-left:none;
+}
+.noBorder{
+	border-top:none;
+}
+.borderTop{
+	border-top:1px solid #d4d4d4;
+}
+.mainTable th,
+.mainTable td{
+	border-left:1px solid #d4d4d4;
+	border-bottom:1px solid #d4d4d4;
+	padding:5px;
+}
+
+.signatureSection{padding-top:30px; border-bottom:1px solid #333}
+.month{font-size:18px}
+.denied{background:#ffeef7}
+.deniedTH{background:#ffdeef !important}
+.break td{background:#e5e5e5 !important;}
+</style>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="20%"><img src="images/palmettocap_logo.png" height="80" /></td>
+    <td width="60%" align="center" class="month">Nov 2016</td>
+    <td width="20%" align="right">Front Desk Report</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="mainTable">
+  <tr>
+    %ITEMIZED_REPORT_ROWS_HEADER%
+    <th rowspan="2">Tot Sched Clts</th>
+    <th width="8%" rowspan="2"># Served</th>
+    <th colspan="5" align="center">Denied</th>
+    <th width="8%" rowspan="2">No <br />
+    Show</th>
+  </tr>
+  <tr>
+    <th width="8%" align="center">IN</th>
+    <th width="8%" align="center">SS</th>
+    <th width="8%" align="center">ID/DL</th>
+    <th width="8%" align="center">OI</th>
+    <th width="8%" align="center">PA</th>
+  </tr>
+  %ITEMIZED_REPORT_ROWS_BODY%
+  <tr class="totalRow">
+  	<td>Total</td>
+    <td>&nbsp;</td>
+       %ITEMIZED_REPORT_TOTAL_ROWS_BODY%
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="mainTable noBorder">
+  <tr>
+    <th colspan="6" class="noBg">&nbsp;</th>
+    <th width="8%" class="borderTop">Goal</th>
+  </tr>
+  %PERCENTAGE_TEMPLATE_ROW1%
+  %PERCENTAGE_TEMPLATE_ROW2%
+  %PERCENTAGE_TEMPLATE_ROW3%
+  %PERCENTAGE_TEMPLATE_ROW4%
+  %PERCENTAGE_TEMPLATE_ROW5%
+</table>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan faucibus neque. </p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="46%" class="signatureSection">&nbsp;</td>
+    <td width="39%">&nbsp;</td>
+    <td width="15%" class="signatureSection">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Sophia Brown, Customer Service Rep</td>
+    <td>&nbsp;</td>
+    <td>Date</td>
+  </tr>
+</table>
+
+</body>
+</html>
